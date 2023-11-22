@@ -12,9 +12,6 @@ read -p "give user password : " c
 echo $c | passwd --stdin $a
 echo "giving sudo access"
 echo "$a ALL=(ALL) NOPASSWD: ALL" >> /etc/passwd
-id $a
-echo " hello $a"
-echo "all done"
 	
 fi
 
